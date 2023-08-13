@@ -50,9 +50,11 @@ source $XDG_CONFIG_HOME/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlight
 source $XDG_CONFIG_HOME/zsh/plugins/zsh-auto-notify/auto-notify.plugin.zsh
 AUTO_NOTIFY_IGNORE+=("btop" "wofi" "rofi")
 
-ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+source $XDG_CONFIG_HOME/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
 
 source $XDG_CONFIG_HOME/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
+
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f $XDG_CONFIG_HOME/zsh/.p10k.zsh ]] || source $XDG_CONFIG_HOME/zsh/.p10k.zsh
