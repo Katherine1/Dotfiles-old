@@ -48,7 +48,7 @@ bindkey '^[[B' history-substring-search-down
 source $XDG_CONFIG_HOME/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source $XDG_CONFIG_HOME/zsh/plugins/zsh-auto-notify/auto-notify.plugin.zsh
-AUTO_NOTIFY_IGNORE+=("btop" "wofi" "rofi")
+AUTO_NOTIFY_IGNORE+=("btop" "wofi" "rofi" "nvim" "micro")
 
 source $XDG_CONFIG_HOME/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
 
