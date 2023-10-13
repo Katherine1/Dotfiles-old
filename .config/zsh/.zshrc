@@ -59,4 +59,4 @@ ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f $XDG_CONFIG_HOME/zsh/.p10k.zsh ]] || source $XDG_CONFIG_HOME/zsh/.p10k.zsh
 
-neofetch
+#neofetch
