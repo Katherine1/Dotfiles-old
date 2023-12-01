@@ -1,5 +1,9 @@
-#!/bin/env zsh
+#!/bin/env dash
 
-source ~/.config/game-settings/ray_tracing.sh
+export PROTON_HIDE_NVIDIA_GPU=0
+export PROTON_ENABLE_NVAPI=1
+export PROTON_ENABLE_NGX_UPDATER=1
+export VKD3D_CONFIG=dxr
 export VKD3D_FEATURE_LEVEL=12_2
+export MANGOHUD=1
 # export PROTON_LOG=1
