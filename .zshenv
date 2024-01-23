@@ -1,6 +1,7 @@
 # Environment Variables
-export SYSTEMD_EDITOR=nvim
-export EDITOR="nvim"
+export VISUAL="nvim"
+export SYSTEMD_EDITOR=$VISUAL
+export EDITOR=$VISUAL
 export TERMINAL="kitty"
 export BROWSER="vivaldi-stable"
 
