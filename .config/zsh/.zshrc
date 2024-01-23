@@ -34,25 +34,14 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# Custom Prompt - mimics fish, replaced by p10k theme
-#PROMPT='%F{cyan}%n%f@%F{green}%m%f:%F{blue}%~%f%# '
-#ZSH_CUSTOM_PROMPT_LAYOUT='%n@%m:%~ %# '
-
 # Plugins
-source $XDG_CONFIG_HOME/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ${ZDOTDIR:-~}/.antidote/antidote.zsh
+antidote load ${ZDOTDIR:-$HOME}/.zsh_plugins.txt
 
-source $XDG_CONFIG_HOME/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-source $XDG_CONFIG_HOME/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-source $XDG_CONFIG_HOME/zsh/plugins/zsh-auto-notify/auto-notify.plugin.zsh
 AUTO_NOTIFY_IGNORE+=("btop" "wofi" "rofi" "nvim" "micro")
-
-source $XDG_CONFIG_HOME/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
-
-source $XDG_CONFIG_HOME/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
 
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
