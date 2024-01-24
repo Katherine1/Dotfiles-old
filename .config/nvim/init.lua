@@ -22,6 +22,6 @@ require("lazy").setup({
 	{'neovim/nvim-lspconfig', dependencies = {'hrsh7th/cmp-nvim-lsp'}},
 	{'hrsh7th/nvim-cmp', dependencies = {'L3MON4D3/LuaSnip'}},
 	'williamboman/mason.nvim',
-	{'williamboman/mason-lspconfig.nvim', dependencies = {'neovim/nvim-lspconfig'}}
+	{'williamboman/mason-lspconfig.nvim', dependencies = {'williamboman/mason.nvim', 'neovim/nvim-lspconfig'}}
 })
 
