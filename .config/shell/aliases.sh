@@ -10,3 +10,6 @@ alias yay="paru"
 alias yeet="paru -Rcs"
 
 alias ssh="kitten ssh"
+alias ip="ip -color"
+
+alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
