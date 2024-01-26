@@ -15,7 +15,7 @@ bindkey -e
 zstyle :compinstall filename '$XDG_CONFIG_HOME/zsh/.zshrc'
 
 # aliases
-[ -f "${XDG_CONFIG_HOME}/shell/aliases.sh" ] && source "${XDG_CONFIG_HOME}/shell/aliases.sh"
+[ -f "${XDG_CONFIG_HOME}/shell/shell.sh" ] && source "${XDG_CONFIG_HOME}/shell/shell.sh"
 
 setopt prompt_subst
 setopt always_to_end
