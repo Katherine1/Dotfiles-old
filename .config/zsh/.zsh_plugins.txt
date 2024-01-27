@@ -5,3 +5,5 @@ zsh-users/zsh-history-substring-search kind:defer
 zdharma-continuum/fast-syntax-highlighting kind:defer
 MichaelAquilina/zsh-auto-notify
 MichaelAquilina/zsh-you-should-use
+chisui/zsh-nix-shell
+
