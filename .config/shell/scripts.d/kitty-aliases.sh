@@ -1,1 +1,3 @@
-alias ssh="kitten ssh"
+if [ "$TERM" = "xterm-kitty" ]; then
+    alias ssh="kitten ssh"
+fi
