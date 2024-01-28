@@ -16,6 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	{'nvim-telescope/telescope.nvim', branch= '0.1.x', dependencies = {'nvim-lua/plenary.nvim'}},
 	'sainnhe/gruvbox-material',
+    {'catppuccin/nvim', name = 'catppuccin', priority = 1000 },
 	{'nvim-treesitter/nvim-treesitter', run = {':TSUpdate'}},
 	'mbbill/undotree',
 	{'VonHeikemen/lsp-zero.nvim', branch = 'v3.x', lazy = true, config = false},
@@ -23,6 +24,8 @@ require("lazy").setup({
 	{'hrsh7th/nvim-cmp', dependencies = {'L3MON4D3/LuaSnip'}},
 	'williamboman/mason.nvim',
 	{'williamboman/mason-lspconfig.nvim', dependencies = {'williamboman/mason.nvim', 'neovim/nvim-lspconfig'}},
-    'vim-airline/vim-airline'
+--    'vim-airline/vim-airline',
+    {'christoomey/vim-tmux-navigator', lazy = false},
+    'feline-nvim/feline.nvim'
 })
 
