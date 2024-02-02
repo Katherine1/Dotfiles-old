@@ -41,7 +41,7 @@ antidote load ${ZDOTDIR:-$HOME}/.zsh_plugins.txt
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-AUTO_NOTIFY_IGNORE+=("btop" "wofi" "rofi" "nvim" "tmux" "nix-shell" "fzf")
+AUTO_NOTIFY_IGNORE+=("btop" "wofi" "rofi" "nvim" "tmux" "nix-shell" "fzf" "tt++")
 
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
