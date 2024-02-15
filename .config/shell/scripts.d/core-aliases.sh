@@ -8,7 +8,7 @@ fi
 
 if (( $+commands[bat] )); then
     alias cat="bat"
-    if (( $commands[fzf] )); then
+    if (( $+commands[fzf] )); then
         alias fzf='fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"'
     fi
 fi
