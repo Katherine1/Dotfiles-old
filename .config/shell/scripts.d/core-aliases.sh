@@ -1,16 +1,20 @@
-#!/bin/env sh
+#!/usr/bin/zsh
 
-if command -v eza > /dev/null 2>&1; then
+if (( $+commands[eza] )); then
     alias ls="eza --icons --group-directories-first"
-elif command -v exa > /dev/null 2>&1; then
+elif (( $+commands[exa] )); then
     alias ls="exa --icons --group-directories-first"
 fi
 
-if command -v bat > /dev/null 2>&1; then
+if (( $+commands[bat] )); then
     alias cat="bat"
-    if command -v fzf > /dev/null 2>&1; then
+    if (( $commands[fzf] )); then
         alias fzf='fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"'
     fi
+fi
+
+if (( $+commands[zoxide] )); then
+    alias cd="z"
 fi
 
 alias grep='grep --color=always'
