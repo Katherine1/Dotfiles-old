@@ -6,4 +6,5 @@ zdharma-continuum/fast-syntax-highlighting kind:defer
 MichaelAquilina/zsh-auto-notify
 MichaelAquilina/zsh-you-should-use
 chisui/zsh-nix-shell
+atuinsh/atuin
 
